@@ -1,0 +1,412 @@
+
+    
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: grey
+}
+
+ul{
+    list-style: none;
+}
+
+h1,h2,h3,h4{
+    color: white;
+}
+
+img{
+    width: 100%;
+}
+h3
+{
+    font-weight: lighter;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+p{
+    font-weight: bold;
+    color: white;
+}
+
+
+
+.showcase{
+    width: 100%;
+    height: 92vh;
+    position: relative;
+    background: url("mainpage.jpg") no-repeat center center/cover;
+}
+
+.showcase::after{
+    position: absolute;
+    background: rgba(0,0,0,0.56);
+    box-shadow: 120px,100px,250px,black, inset -120px -100px 250px black;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    content: "";
+
+}
+
+.showcase-1{
+    position: relative;
+    z-index: 2;
+    height: 90px;
+}
+
+.showcase-1 img{
+    width: 170px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(40% , -50%);
+
+}
+
+.showcase-1 .langSelect{
+    position: absolute;
+    top: 30%;
+    left: 1271px;
+    background: rgb(0, 0, 0);
+    color: white;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    text-align: center;
+    border: 5px;
+    border-color: white;
+    margin-right: 0.5rem;
+}
+
+
+.showcase-1 a{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-60%,-50%);
+}
+
+.showcase-2{
+    position: relative;
+    margin: 0 26%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    margin-top: 9rem;
+}
+
+.showcase-2 h1{
+    font-weight: 700;
+    font-size: 64px;
+    margin: 0 30px;
+    max-width: 800px;
+    line-height: 74.5px;
+}
+
+.showcase-2 h3{
+    color: white;
+    font-size: 25px;
+    margin: 16px 0;
+}
+
+.showcase-2 p{
+    font-size: 19.2px;
+    font-weight: 300;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+
+}
+
+.showcase-2 input{
+    position: absolute;
+    left: 0;
+    bottom: -8vh;
+    width:454px;
+    height: 3rem;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+.button{
+    display: inline-block;
+    background: red;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 5px 3px rgba(0,0,0,0.45);
+}
+
+.button:hover{
+    opacity: 0.9;
+}
+
+.button-rounded{
+    border-radius: 5px;
+}
+
+.showcase-2 .button-full{
+    position: absolute;
+    left: 467px;
+    bottom: -7.9vh;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    height: 37px;
+    width: 14rem;
+}
+
+/*--------------HEADER/SHOWCASE-------------------------*/
+
+.slide-0,
+.slide-1,
+.slide-2,
+.slide-3,
+.lastslide,
+.footer{
+    border-top: 5px rgb(65, 61, 61) solid;
+    padding: 50px;
+}
+
+.slide-0{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 60px 40px;
+    
+}
+
+.sec-1{
+    padding-left: 80px;
+}
+
+ 
+.slides h1{
+    font-size: 3rem;
+    padding-left: 0;
+}
+.slides h3{
+    font-size: 1.625rem;
+}
+.slide-0 video{
+    grid-column: 2/2;
+    grid-row: 1/2;
+    width: 388px;
+    padding-bottom: 15px;
+    padding-left: 71px;
+}
+
+.slide-0 img{
+        grid-column: 2/2;
+        grid-row: 1/2;
+        width: 73%;
+}
+
+.slide-1{
+    position: relative;
+    display: grid;
+    grid-template-columns:50% 60%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+.sec-2{
+    padding-left: 1px;
+}
+
+.strangert{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.slide-1 img{
+    width: 73%;
+}
+
+
+.slide-2{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 50px 40px;
+    
+}
+
+.sec-3{
+    padding-left: 80px;
+    padding-right: 20px;
+}
+
+.slide-2 video{
+    grid-column: 2/2;
+    grid-row: 1/2;
+    width: 386px;
+    padding-bottom: 154px;
+    padding-left: 97px;
+}
+
+.slide-2 img{
+        grid-column: 2/2;
+        grid-row: 1/2;
+}
+
+.slide-3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 50px 40px;
+}
+
+.sec-4{
+    padding-left: 18px;
+}
+
+.children{
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-3 img{
+    width: 75%;
+    padding-left: 105px;
+}
+
+
+
+
+
+
+/*---------------------------------------------*/
+
+.faq{
+    text-align: center;
+}
+
+.faq h1{
+    padding-bottom: 40px;
+    font-size: 3rem;
+}
+
+.Questions{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    align-items: center;
+}
+
+.Questions li{
+    padding: 20px 30px;
+    margin: 5px;
+    font-size: 1.6rem;
+    background-color: rgb(54, 48, 48);
+    color: white;
+    text-align: left;
+    width: 50%;
+}
+
+.faq p{
+    padding-top: 60px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding-bottom: 27px;
+}
+
+.input{
+    display: inline-grid;
+    align-items: center;
+    grid-template-columns: 40% 50%;
+    padding-left: 210px;
+}
+
+.input input{
+    width: 600px;
+    height: 46px;
+}
+
+.input button{
+    height: 3.25rem;
+    width: 320px;
+    left: 20px;
+    text-align: center;
+    background-color: red;
+    font-size: 1.5rem;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+}
+
+
+/*/////////////////////////FOOTER////////////////////////////*/
+.footer-cols{
+    max-width: 90%;
+    margin: 1rem auto;
+    text-align: left;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.footer,
+.footer a{
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.footer p{
+    margin-bottom: 1.5rem;
+    padding-left: 112px;
+    color: gray;
+    padding-top: 10px;
+}
+
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.footer li{
+    line-height: 2;
+}
+
+.selecter{
+    position: absolute;
+    margin-top: 187px;
+    margin-left: 35px;
+    display: inline-block;
+    block-size: 30px;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+
+.footer label{
+    position: absolute;
+    padding-left: 127px;
+    padding-top: 55px;
+    font-size: 0.9rem;
+    padding-bottom: 20px;
+}
